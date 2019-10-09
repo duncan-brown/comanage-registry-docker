@@ -35,7 +35,7 @@ LABEL comanage_registry_shibboleth_sp_version=${COMANAGE_REGISTRY_SHIBBOLETH_SP_
 
 ARG COMANAGE_REGISTRY_SHIBBOLETH_SP_BASE_IMAGE_VERSION
 ENV COMANAGE_REGISTRY_SHIBBOLETH_SP_BASE_IMAGE_VERSION ${COMANAGE_REGISTRY_SHIBBOLETH_SP_BASE_IMAGE_VERSION}
-LABEL comanage_registry_shibboleth_sp_base_image_version ${COMANAGE_REGISTRY_SHIBBOLETH_SP_BASE_IMAGE_VERSION}
+LABEL comanage_registry_shibboleth_sp_base_image_version=${COMANAGE_REGISTRY_SHIBBOLETH_SP_BASE_IMAGE_VERSION}
 
 RUN apt-get install -y --no-install-recommends supervisor \
       && mkdir -p /var/log/supervisor
